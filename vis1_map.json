@@ -1,16 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 500,
+  "width": 820,
+  "height": 520,
   "title": "Major National Parks Distribution Across Australia",
-  "projection": {"type": "mercator", "scale": 600, "translate": [400, 280]},
+  "projection": {"type": "mercator", "scale": 650, "translate": [410, 270]},
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/alwaysblazing/Australia-State-TopoJson-MapChart/master/au-states-topo.json",
-        "format": {"type": "topojson", "feature": "austates"}
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+        "format": {"type": "geojson"}
       },
-      "mark": {"type": "geoshape", "fill": "#e0f2fe", "stroke": "#64748b", "strokeWidth": 1.5}
+      "mark": {
+        "type": "geoshape",
+        "fill": "#bae6fd",
+        "stroke": "#1e40af",
+        "strokeWidth": 2
+      }
     }
   ]
 }
