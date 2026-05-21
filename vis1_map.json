@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "title": "Major National Parks Distribution Across Australia",
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/australia/australia-states-provinces.json",
+        "format": {"type": "topojson", "feature": "AUS_adm1"}
+      },
+      "mark": {"type": "geoshape", "stroke": "#aaa", "strokeWidth": 1},
+      "encoding": {
+        "color": {"value": "#e0f2fe"}
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/australia/australia-states-provinces.json",
+        "format": {"type": "topojson", "feature": "AUS_adm1"}
+      },
+      "mark": {"type": "geoshape", "stroke": "#1e40af", "strokeWidth": 1.5},
+      "encoding": {
+        "color": {"field": "properties.NAME_1", "type": "nominal", "legend": null}
+      }
+    }
+  ]
+}
