@@ -3,27 +3,14 @@
   "width": 800,
   "height": 500,
   "title": "Major National Parks Distribution Across Australia",
-  "projection": {"type": "mercator"},
+  "projection": {"type": "mercator", "scale": 600, "translate": [400, 280]},
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/australia/australia-states-provinces.json",
-        "format": {"type": "topojson", "feature": "AUS_adm1"}
+        "url": "https://raw.githubusercontent.com/alwaysblazing/Australia-State-TopoJson-MapChart/master/au-states-topo.json",
+        "format": {"type": "topojson", "feature": "austates"}
       },
-      "mark": {"type": "geoshape", "stroke": "#aaa", "strokeWidth": 1},
-      "encoding": {
-        "color": {"value": "#e0f2fe"}
-      }
-    },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/australia/australia-states-provinces.json",
-        "format": {"type": "topojson", "feature": "AUS_adm1"}
-      },
-      "mark": {"type": "geoshape", "stroke": "#1e40af", "strokeWidth": 1.5},
-      "encoding": {
-        "color": {"field": "properties.NAME_1", "type": "nominal", "legend": null}
-      }
+      "mark": {"type": "geoshape", "fill": "#e0f2fe", "stroke": "#64748b", "strokeWidth": 1.5}
     }
   ]
 }
