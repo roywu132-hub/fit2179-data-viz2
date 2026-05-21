@@ -3,10 +3,17 @@
   "width": 800,
   "height": 500,
   "title": "Australia States and Territories",
-  "projection": {"type": "mercator", "scale": 650, "translate": [400, 260]},
   "data": {
     "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
     "format": {"type": "geojson"}
   },
-  "mark": {"type": "geoshape", "fill": "#bae6fd", "stroke": "#1e40af", "strokeWidth": 2}
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "fill": "#bae6fd",
+    "stroke": "#1e40af",
+    "strokeWidth": 2
+  }
 }
