@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovering Australia’s National Parks | FIT2179 Data Visualisation 2</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px auto;
+            max-width: 1200px;
+            line-height: 1.7;
+            color: #333;
+        }
+        h1 { 
+            text-align: center; 
+            color: #1e3a8a; 
+        }
+        h2 { 
+            color: #1e40af; 
+            margin-top: 50px; 
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 12px;
+        }
+        .vis { 
+            margin: 40px 0; 
+            padding: 20px; 
+            border: 1px solid #eee; 
+            background: #fafafa; 
+        }
+        footer { 
+            text-align: center; 
+            margin-top: 80px; 
+            color: #666; 
+            font-size: 0.95em; 
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Discovering Australia’s National Parks</h1>
+    <p style="text-align: center; font-size: 1.1em;">Nature, Conservation and Visitor Experience • FIT2179 Data Visualisation 2</p>
+
+    <h2>Introduction</h2>
+    <p>[Write 2-3 paragraphs here introducing the importance of national parks to Australians and why this visualisation matters.]</p>
+
+    <h2>1. Geographic Distribution of Major National Parks</h2>
+    <div id="vis1" class="vis"></div>
+
+    <h2>2. [Chart Title 2 - e.g. Visitor Numbers Trend]</h2>
+    <div id="vis2" class="vis"></div>
+
+    <h2>3. [Chart Title 3]</h2>
+    <div id="vis3" class="vis"></div>
+
+    <h2>4. [Chart Title 4]</h2>
+    <div id="vis4" class="vis"></div>
+
+    <h2>5. [Chart Title 5]</h2>
+    <div id="vis5" class="vis"></div>
+
+    <h2>6. [Chart Title 6]</h2>
+    <div id="vis6" class="vis"></div>
+
+    <h2>7. [Chart Title 7]</h2>
+    <div id="vis7" class="vis"></div>
+
+    <h2>8. [Chart Title 8]</h2>
+    <div id="vis8" class="vis"></div>
+
+    <h2>9. [Chart Title 9]</h2>
+    <div id="vis9" class="vis"></div>
+
+    <h2>10. [Chart Title 10]</h2>
+    <div id="vis10" class="vis"></div>
+
+    <h2>Conclusion</h2>
+    <p>[Write your conclusion and key takeaways here.]</p>
+
+    <footer>
+        Author: [Your Full Name]<br>
+        Student ID: [Your Student ID]<br>
+        Created: May 2026<br><br>
+        Data sources: Parks Australia, Tourism Australia, Australian Bureau of Statistics
+    </footer>
+
+    <script>
+        vegaEmbed('#vis1', 'vis1_map.json');
+        vegaEmbed('#vis2', 'vis2.json');
+        vegaEmbed('#vis3', 'vis3.json');
+        vegaEmbed('#vis4', 'vis4.json');
+        vegaEmbed('#vis5', 'vis5.json');
+        vegaEmbed('#vis6', 'vis6.json');
+        vegaEmbed('#vis7', 'vis7.json');
+        vegaEmbed('#vis8', 'vis8.json');
+        vegaEmbed('#vis9', 'vis9.json');
+        vegaEmbed('#vis10', 'vis10.json');
+    </script>
+</body>
+</html>
