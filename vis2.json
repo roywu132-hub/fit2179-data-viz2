@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "International Visitors by State (2024)",
+  "data": {
+    "values": [
+      {"state": "NSW", "visitors": 1850},
+      {"state": "VIC", "visitors": 1420},
+      {"state": "QLD", "visitors": 1680},
+      {"state": "WA", "visitors": 980},
+      {"state": "SA", "visitors": 520}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "state", "type": "nominal", "sort": "-y"},
+    "y": {"field": "visitors", "type": "quantitative", "title": "Visitors (thousands)"},
+    "color": {"value": "#1e40af"}
+  }
+}
