@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": "Top National Parks by Visitors",
+  "data": {
+    "values": [
+      {"park": "Blue Mountains", "visitors": 7800},
+      {"park": "Great Otway", "visitors": 1350},
+      {"park": "Daintree", "visitors": 850},
+      {"park": "Uluru", "visitors": 245}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "visitors", "type": "quantitative"},
+    "color": {"field": "park", "type": "nominal"}
+  }
+}
