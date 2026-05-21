@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "Visitor Growth Trend (2020-2024)",
+  "data": {
+    "values": [
+      {"year": 2020, "visitors": 450},
+      {"year": 2021, "visitors": 320},
+      {"year": 2022, "visitors": 680},
+      {"year": 2023, "visitors": 1200},
+      {"year": 2024, "visitors": 1850}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "year", "type": "quantitative"},
+    "y": {"field": "visitors", "type": "quantitative"},
+    "color": {"value": "#3b82f6"}
+  }
+}
