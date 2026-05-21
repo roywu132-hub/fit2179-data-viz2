@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "Visitor Numbers vs Park Size",
+  "data": {
+    "values": [
+      {"park": "Blue Mountains", "visitors": 7800, "area": 2670},
+      {"park": "Great Otway", "visitors": 1350, "area": 1032},
+      {"park": "Daintree", "visitors": 850, "area": 1200},
+      {"park": "Uluru", "visitors": 245, "area": 1326}
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "area", "type": "quantitative", "title": "Area (sq km)"},
+    "y": {"field": "visitors", "type": "quantitative", "title": "Visitors (thousands)"},
+    "size": {"field": "visitors", "type": "quantitative"},
+    "tooltip": [{"field": "park"}]
+  }
+}
